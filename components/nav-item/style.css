@@ -1,0 +1,20 @@
+.nav-item {
+  font-family: var(--font-buttons);
+  font-size: var(--size-nav);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-auto);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--fg);
+}
+
+.nav-item--hover {
+  color: var(--fg-sec);
+}
+
+.nav-item--active {
+  text-decoration: underline;
+  text-decoration-thickness: var(--stroke-medium);
+  text-underline-offset: 0.3em;
+  color: var(--fg-sec);
+}

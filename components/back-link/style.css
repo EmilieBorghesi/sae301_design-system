@@ -1,0 +1,17 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: var(--target);
+  font-family: var(--font-buttons);
+  font-size: var(--size-large);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-auto);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bg);
+}
+
+.back-link__icon {
+  width: var(--icon-s);
+}

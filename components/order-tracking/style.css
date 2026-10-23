@@ -1,0 +1,50 @@
+.order-tracking {
+  display: flex;
+  width: 100%;
+  gap: var(--space-m);
+  max-width: var(--content-width);
+}
+
+.tracking-step {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.tracking-step__dot {
+  display: grid;
+  place-items: center;
+  width: var(--step-dot);
+  height: var(--step-dot);
+  font-family: var(--font-buttons);
+  font-size: var(--size-label);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  color: var(--bg);
+  background-color: var(--fg);
+  border: var(--stroke-thin) solid var(--bg);
+  border-radius: var(--radius-round);
+}
+
+.tracking-step__label {
+  font-family: var(--font-buttons);
+  font-size: var(--size-medium);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-auto);
+  text-align: center;
+}
+
+.tracking-step--done .tracking-step__dot {
+  background: var(--bg) url("../../assets/icons/check-white.svg") center / var(--icon-m) no-repeat;
+}
+
+.tracking-step--current .tracking-step__dot {
+  background-color: var(--pink-300);
+  border: var(--stroke-medium) solid var(--bg);
+}
+
+.tracking-step--current .tracking-step__label {
+  font-weight: var(--weight-bold);
+}

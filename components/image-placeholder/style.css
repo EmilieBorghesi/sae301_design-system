@@ -1,0 +1,22 @@
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--pink-100);
+  border-radius: var(--radius-image);
+}
+
+.image-placeholder--product {
+  aspect-ratio: var(--ratio-product);
+}
+
+.image-placeholder--cart {
+  aspect-ratio: var(--ratio-cart);
+}
+
+.image-placeholder__icon {
+  width: var(--icon-image);
+  max-width: 40%;
+}

@@ -1,0 +1,33 @@
+@layer reset, variables, components, utilities;
+
+@import "./reset.css" layer(reset);
+@import "./variables.css" layer(variables);
+@import "./global.css" layer(components);
+@import "./utilities.css" layer(utilities);
+
+@import "../components/btn/style.css" layer(components);
+@import "../components/dropdown/style.css" layer(components);
+@import "../components/back-link/style.css" layer(components);
+@import "../components/nav-item/style.css" layer(components);
+@import "../components/footer-link/style.css" layer(components);
+@import "../components/icon-link/style.css" layer(components);
+@import "../components/social-link/style.css" layer(components);
+@import "../components/option/style.css" layer(components);
+@import "../components/form-field/style.css" layer(components);
+@import "../components/checkbox/style.css" layer(components);
+@import "../components/payment/style.css" layer(components);
+@import "../components/promo-code/style.css" layer(components);
+@import "../components/total/style.css" layer(components);
+@import "../components/order-summary/style.css" layer(components);
+@import "../components/badge/style.css" layer(components);
+@import "../components/order-tracking/style.css" layer(components);
+@import "../components/info-list/style.css" layer(components);
+@import "../components/image-placeholder/style.css" layer(components);
+@import "../components/product-thumb/style.css" layer(components);
+@import "../components/carousel/style.css" layer(components);
+@import "../components/product-card/style.css" layer(components);
+@import "../components/product-list/style.css" layer(components);
+@import "../components/product-detail/style.css" layer(components);
+@import "../components/cart-item/style.css" layer(components);
+@import "../components/footer/style.css" layer(components);
+@import "../components/header/style.css" layer(components);

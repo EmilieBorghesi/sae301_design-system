@@ -1,0 +1,39 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-xs);
+  max-width: var(--field-width);
+}
+
+.form-field__label {
+  font-family: var(--font-buttons);
+  font-size: var(--size-medium);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-auto);
+}
+
+.form-field__input {
+  width: 100%;
+  padding: var(--space-s) var(--space-m);
+  min-height: var(--field-height);
+  font-family: var(--font-body);
+  font-size: var(--size-medium);
+  color: var(--bg);
+  background-color: var(--fg);
+  border: var(--stroke-thin) solid var(--bg);
+  border-radius: 0;
+}
+
+.form-field__input:focus,
+.form-field__input--focus {
+  outline: var(--stroke-medium) solid var(--bg-sec);
+  outline-offset: calc(var(--stroke-medium) * -1);
+}
+
+.form-field__input--select {
+  appearance: none;
+  padding-right: 3.5rem;
+  background: var(--fg) url("../../assets/icons/chevron-down.svg") right var(--space-m) center / var(--space-m) auto no-repeat;
+  cursor: pointer;
+}

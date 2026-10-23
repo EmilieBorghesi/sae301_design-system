@@ -1,0 +1,58 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-s);
+  padding: var(--space-s) var(--space-xl);
+  min-height: var(--target);
+  font-family: var(--font-buttons);
+  font-size: var(--size-large);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-auto);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bg);
+  background-color: transparent;
+  border: var(--stroke-bold) solid var(--bg);
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--white {
+  color: var(--fg);
+  border-color: var(--fg);
+}
+
+.btn--hover,
+.btn--animated:hover {
+  color: var(--bg);
+  background-color: var(--pink-300);
+  border-color: var(--pink-300);
+}
+
+.btn--pink {
+  padding: var(--space-xs) var(--space-button);
+  font-size: var(--size-small);
+  background-color: var(--pink-300);
+  border-color: var(--pink-300);
+  border-radius: var(--radius-soft);
+}
+
+.btn--pink.btn--hover,
+.btn--pink.btn--animated:hover {
+  background-color: var(--pink-100);
+  border-color: var(--pink-100);
+}
+
+.btn--animated {
+  transition: background-color var(--duration), border-color var(--duration), color var(--duration);
+}
+
+.btn--more {
+  padding: var(--space-s) var(--space-l) var(--space-s) var(--space-xl);
+}
+
+.btn__icon {
+  width: var(--icon-s);
+}

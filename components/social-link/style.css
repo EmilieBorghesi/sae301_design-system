@@ -1,0 +1,17 @@
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--social-size);
+  height: var(--social-size);
+  background-color: var(--pink-300);
+  border-radius: var(--radius-round);
+}
+
+.social-link--hover {
+  background-color: var(--pink-100);
+}
+
+.social-link__icon {
+  width: var(--social-icon);
+}

@@ -1,0 +1,37 @@
+.order-summary {
+  width: 100%;
+  max-width: var(--content-width);
+}
+
+.summary-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-m) 0;
+  gap: var(--space-m);
+  border-bottom: var(--stroke-thin) solid var(--bg-sec);
+}
+
+.summary-line__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.summary-line__name,
+.summary-line__price {
+  font-family: var(--font-buttons);
+  font-size: var(--size-label);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-auto);
+}
+
+.summary-line__price {
+  white-space: nowrap;
+}
+
+.summary-line__detail {
+  font-family: var(--font-body);
+  font-size: var(--size-small);
+  line-height: var(--line-text);
+}

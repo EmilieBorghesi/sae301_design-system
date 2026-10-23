@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System | Emilie and the Cool Kids</title>
+  <meta name="description" content="Tous les composants du design system Emilie and the Cool Kids, codés en HTML et CSS avec les variables du Figma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&amp;display=swap">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body class="page" id="top">
+  <svg class="visually-hidden" aria-hidden="true">
+    <symbol id="icon-cart" viewBox="0 0 48 46" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round">
+      <path d="M8.99976 11.333H41.1766C41.8286 11.333 42.4733 11.4697 43.0692 11.7341C43.6652 11.9986 44.1991 12.385 44.6366 12.8684C45.074 13.3518 45.4054 13.9215 45.6092 14.5408C45.813 15.1601 45.8848 15.8153 45.8199 16.464L44.4199 30.464C44.3048 31.6155 43.7659 32.6832 42.9078 33.4597C42.0498 34.2363 40.9338 34.6663 39.7766 34.6663H17.4931C16.4139 34.6668 15.3679 34.2931 14.5332 33.609C13.6984 32.9249 13.1266 31.9726 12.9151 30.9143L8.99976 11.333Z"/>
+      <path d="M9.00003 11.3333L7.11002 3.76633C6.98362 3.26176 6.69224 2.81389 6.28217 2.49386C5.8721 2.17384 5.36685 2.00001 4.84668 2H2M16.0001 44H20.6668M34.6668 44H39.3335" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-account" viewBox="0 0 44 49" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 22C16.475 22 12 17.525 12 12C12 6.475 16.475 2 22 2C27.525 2 32 6.475 32 12C32 17.525 27.525 22 22 22Z"/>
+      <path d="M2 47V44.5C2 36.225 8.725 29.5 17 29.5H27C35.275 29.5 42 36.225 42 44.5V47"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="header dark-background">
+    <a href="#top"><img class="header__logo" src="assets/images/logo.png" alt="Emilie and the Cool Kids, retour en haut" width="666" height="202"></a>
+    <div class="header__actions">
+      <a class="icon-link" href="#panier">
+        <svg class="icon-link__icon" aria-hidden="true"><use href="#icon-cart"></use></svg>
+        <span class="visually-hidden">Panier</span>
+      </a>
+      <a class="icon-link" href="#commande">
+        <svg class="icon-link__icon" aria-hidden="true"><use href="#icon-account"></use></svg>
+        <span class="visually-hidden">Mon compte</span>
+      </a>
+    </div>
+  </header>
+
+  <nav class="section-nav" aria-label="Sections du design system">
+    <ul class="section-nav__list">
+      <li><a class="btn btn--pink" href="#couleurs">Couleurs</a></li>
+      <li><a class="btn btn--pink" href="#typographie">Typo</a></li>
+      <li><a class="btn btn--pink" href="#boutons">Boutons</a></li>
+      <li><a class="btn btn--pink" href="#navigation">Navigation</a></li>
+      <li><a class="btn btn--pink" href="#formulaires">Formulaires</a></li>
+      <li><a class="btn btn--pink" href="#produits">Produits</a></li>
+      <li><a class="btn btn--pink" href="#panier">Panier</a></li>
+      <li><a class="btn btn--pink" href="#commande">Commande</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu">
+    <div class="hero">
+      <h1 class="title">Design System</h1>
+      <p class="subtitle hero__text">Tous les composants de la maquette, codés en HTML et CSS avec les variables du Figma. Survole et clique pour voir les états.</p>
+    </div>
+
+    <section class="doc-section" id="couleurs" aria-labelledby="couleurs-titre">
+      <h2 class="title title--h2" id="couleurs-titre">Couleurs</h2>
+      <h3 class="doc-subtitle">Primitives</h3>
+      <ul class="color-list">
+        <li class="color-card"><span class="color-card__preview color-card__preview--white"></span><span class="color-card__name">white</span><span class="color-card__value">#FFFFFF</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--black"></span><span class="color-card__name">black</span><span class="color-card__value">#000000</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--purple-900"></span><span class="color-card__name">purple/900</span><span class="color-card__value">#2D2850</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--gray-300"></span><span class="color-card__name">gray/300</span><span class="color-card__value">#E5E5E5</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--gray-500"></span><span class="color-card__name">gray/500</span><span class="color-card__value">#B8B8B8</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--pink-100"></span><span class="color-card__name">pink/100</span><span class="color-card__value">#F9D6D6</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--pink-300"></span><span class="color-card__name">pink/300</span><span class="color-card__value">#F39D9D</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--pink-600"></span><span class="color-card__name">pink/600</span><span class="color-card__value">#CC3366</span></li>
+      </ul>
+      <h3 class="doc-subtitle">Sémantiques, mode Prototype</h3>
+      <ul class="color-list">
+        <li class="color-card"><span class="color-card__preview color-card__preview--fg"></span><span class="color-card__name">fg</span><span class="color-card__value">white</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--fg-sec"></span><span class="color-card__name">fg-sec</span><span class="color-card__value">pink/300</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--bg"></span><span class="color-card__name">bg</span><span class="color-card__value">black</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--bg-sec"></span><span class="color-card__name">bg-sec</span><span class="color-card__value">purple/900</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--placeholders"></span><span class="color-card__name">placeholders</span><span class="color-card__value">gray/300</span></li>
+      </ul>
+      <h3 class="doc-subtitle">Sémantiques, mode Wireframe</h3>
+      <ul class="color-list theme-wireframe">
+        <li class="color-card"><span class="color-card__preview color-card__preview--fg"></span><span class="color-card__name">fg</span><span class="color-card__value">white</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--fg-sec"></span><span class="color-card__name">fg-sec</span><span class="color-card__value">black</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--bg"></span><span class="color-card__name">bg</span><span class="color-card__value">black</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--bg-sec"></span><span class="color-card__name">bg-sec</span><span class="color-card__value">gray/500</span></li>
+        <li class="color-card"><span class="color-card__preview color-card__preview--placeholders"></span><span class="color-card__name">placeholders</span><span class="color-card__value">gray/300</span></li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="typographie" aria-labelledby="typographie-titre">
+      <h2 class="title title--h2" id="typographie-titre">Typographie</h2>
+      <ul class="font-list">
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">H1</p>
+            <p class="font-row__details">Eighty Miles 400, 36 à 64 px, majuscules, +9 %</p>
+          </div>
+          <p class="title font-row__preview">Cookies &amp; coffee</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">H2</p>
+            <p class="font-row__details">Eighty Miles 400, 24 à 48 px, majuscules, +9 %</p>
+          </div>
+          <p class="title title--h2 font-row__preview">La carte</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">H3</p>
+            <p class="font-row__details">Eighty Miles 400, 18 à 32 px, majuscules, +9 %</p>
+          </div>
+          <p class="title title--h3 font-row__preview">Salé</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Subtitle</p>
+            <p class="font-row__details">Raleway 400, 18 à 32 px</p>
+          </div>
+          <p class="subtitle font-row__preview">Des cookies faits maison tous les jours</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Body</p>
+            <p class="font-row__details">Helvetica Neue 400, 15 à 16 px</p>
+          </div>
+          <p class="text font-row__preview">Petit pain brioché rond et troué en son milieu, avec du saumon et du cream cheese.</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Buttons</p>
+            <p class="font-row__details">Raleway 700, 16 à 20 px, majuscules</p>
+          </div>
+          <p class="text text--buttons font-row__preview">Ajouter au panier</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Nav items</p>
+            <p class="font-row__details">Raleway 500, 18 à 24 px, majuscules</p>
+          </div>
+          <p class="text text--nav font-row__preview">Products</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Footer items</p>
+            <p class="font-row__details">Helvetica Neue 500, 14 px, majuscules</p>
+          </div>
+          <p class="text text--footer font-row__preview">Mentions légales</p>
+        </li>
+        <li class="font-row">
+          <div>
+            <p class="font-row__name">Diapo</p>
+            <p class="font-row__details">Raleway 400, 24 à 36 px</p>
+          </div>
+          <p class="text text--diapo font-row__preview">Le meilleur cookie de Bordeaux</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="boutons" aria-labelledby="boutons-titre">
+      <h2 class="title title--h2" id="boutons-titre">Boutons</h2>
+      <div class="sample-grid">
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="btn btn--white" href="#footer">Accès franchisé</a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="btn btn--white btn--hover" href="#footer">Accès franchisé</a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn white</span><span class="sample-card__note">Sur fond noir, passe en rose avec le texte noir.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="btn" href="#produits">voir plus</a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="btn btn--hover" href="#produits">voir plus</a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn black</span><span class="sample-card__note">Contour noir, passe en rose.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <button class="btn btn--pink" type="button">ajouter au panier</button>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <button class="btn btn--pink btn--hover" type="button">ajouter au panier</button>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn pink300</span><span class="sample-card__note">Rose, passe en rose pâle.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="btn btn--more" href="#produits">voir toute la carte <img class="btn__icon" src="assets/icons/arrow-right.svg" alt="" width="14" height="25"></a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="btn btn--more btn--hover" href="#produits">voir toute la carte <img class="btn__icon" src="assets/icons/arrow-right.svg" alt="" width="14" height="25"></a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn more</span><span class="sample-card__note">Avec la flèche, passe en rose.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <button class="dropdown-item" type="button">Bordeaux</button>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <button class="dropdown-item dropdown-item--hover" type="button">Bordeaux</button>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">dropdown item</span><span class="sample-card__note">Fond rose pâle et trait noir en dessous.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <a class="back-link" href="#top"><img class="back-link__icon" src="assets/icons/chevron-left.svg" alt="" width="14" height="25">Retour</a>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">back btn</span><span class="sample-card__note">Un seul état dans le Figma.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview sample-card__preview--start">
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Default</span>
+              <details class="dropdown">
+                <summary class="dropdown__toggle">choisis ton coffee shop <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <ul class="dropdown__list">
+                  <li><button class="dropdown-item" type="button">Bordeaux</button></li>
+                  <li><button class="dropdown-item" type="button">Cannes</button></li>
+                  <li><button class="dropdown-item" type="button">La rochelle</button></li>
+                </ul>
+              </details>
+            </div>
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Hover</span>
+              <details class="dropdown" open>
+                <summary class="dropdown__toggle">choisis ton coffee shop <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <ul class="dropdown__list">
+                  <li><button class="dropdown-item" type="button">Bordeaux</button></li>
+                  <li><button class="dropdown-item" type="button">Cannes</button></li>
+                  <li><button class="dropdown-item" type="button">La rochelle</button></li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn location</span><span class="sample-card__note">Comme dans le Figma, l’état Hover est la liste ouverte. Clique pour ouvrir ou fermer.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview sample-card__preview--start">
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Default</span>
+              <details class="dropdown dropdown--quantity">
+                <summary class="dropdown__toggle"><span><span class="visually-hidden">Quantité : </span>1</span> <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <ul class="dropdown__list">
+                  <li><button class="dropdown-item" type="button">1</button></li>
+                  <li><button class="dropdown-item" type="button">2</button></li>
+                  <li><button class="dropdown-item" type="button">3</button></li>
+                </ul>
+              </details>
+            </div>
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Hover</span>
+              <details class="dropdown dropdown--quantity" open>
+                <summary class="dropdown__toggle"><span><span class="visually-hidden">Quantité : </span>1</span> <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <ul class="dropdown__list">
+                  <li><button class="dropdown-item" type="button">1</button></li>
+                  <li><button class="dropdown-item" type="button">2</button></li>
+                  <li><button class="dropdown-item" type="button">3</button></li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">btn quantity</span><span class="sample-card__note">Même fonctionnement que btn location.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="doc-section" id="navigation" aria-labelledby="navigation-titre">
+      <h2 class="title title--h2" id="navigation-titre">Navigation</h2>
+      <div class="sample-grid">
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="nav-item" href="#top">Home</a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="nav-item nav-item--hover" href="#top">Home</a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Active</span>
+              <a class="nav-item nav-item--active" href="#top">Home</a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">nav item</span><span class="sample-card__note">Active est souligné, pour la page en cours.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="footer-link" href="#top">Accueil</a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="footer-link footer-link--hover" href="#top">Accueil</a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">footer item</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="icon-link" href="#panier"><svg class="icon-link__icon" aria-hidden="true"><use href="#icon-cart"></use></svg><span class="visually-hidden">Panier</span></a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="icon-link icon-link--hover" href="#panier"><svg class="icon-link__icon" aria-hidden="true"><use href="#icon-cart"></use></svg><span class="visually-hidden">Panier</span></a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">cart</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="icon-link" href="#commande"><svg class="icon-link__icon" aria-hidden="true"><use href="#icon-account"></use></svg><span class="visually-hidden">Mon compte</span></a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="icon-link icon-link--hover" href="#commande"><svg class="icon-link__icon" aria-hidden="true"><use href="#icon-account"></use></svg><span class="visually-hidden">Mon compte</span></a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">account</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="social-link" href="https://www.facebook.com/"><img class="social-link__icon" src="assets/icons/facebook.svg" alt="Facebook" width="48" height="48"></a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="social-link social-link--hover" href="https://www.facebook.com/"><img class="social-link__icon" src="assets/icons/facebook.svg" alt="Facebook" width="48" height="48"></a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">facebook btn</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--dark dark-background">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="social-link" href="https://www.instagram.com/"><img class="social-link__icon" src="assets/icons/instagram.svg" alt="Instagram" width="42" height="42"></a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="social-link social-link--hover" href="https://www.instagram.com/"><img class="social-link__icon" src="assets/icons/instagram.svg" alt="Instagram" width="42" height="42"></a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">instagram btn</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="doc-section" id="formulaires" aria-labelledby="formulaires-titre">
+      <h2 class="title title--h2" id="formulaires-titre">Formulaires</h2>
+      <div class="sample-grid">
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <label class="option"><input class="option__input visually-hidden" type="checkbox" name="option-default" value="aneth"><span class="option__label">Aneth</span></label>
+            </div>
+            <div class="state-preview">
+              <span class="state-preview__label">Selected</span>
+              <label class="option"><input class="option__input visually-hidden" type="checkbox" name="option-selected" value="citron" checked><span class="option__label">Citron</span></label>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">option</span><span class="sample-card__note">Bascule au clic.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--start">
+            <fieldset class="option-group">
+              <legend class="option-group__legend">Options</legend>
+              <div class="option-group__list">
+                <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-groupe" value="citron" checked><span class="option__label">Citron</span></label>
+                <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-groupe" value="aneth"><span class="option__label">Aneth</span></label>
+                <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-groupe" value="avocat"><span class="option__label">Avocat</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">bloc options</span><span class="sample-card__note">Utilisé dans la fiche produit.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--column">
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Unchecked</span>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="cgv-default">
+                <span class="checkbox__box"></span>
+                <span class="checkbox__label">J’accepte les conditions générales de vente</span>
+              </label>
+            </div>
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Checked</span>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="cgv-checked" checked>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__label">J’accepte les conditions générales de vente</span>
+              </label>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">checkbox</span><span class="sample-card__note">Cochée en rose avec la coche noire.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--column">
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Default</span>
+              <div class="form-field">
+                <label class="form-field__label" for="prenom">Prénom</label>
+                <input class="form-field__input" id="prenom" name="prenom" type="text" value="Emilie" autocomplete="given-name">
+              </div>
+            </div>
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Focus</span>
+              <div class="form-field">
+                <label class="form-field__label" for="nom">Nom</label>
+                <input class="form-field__input form-field__input--focus" id="nom" name="nom" type="text" value="Martin" autocomplete="family-name">
+              </div>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">input field</span><span class="sample-card__note">Clique dans un champ pour voir le vrai Focus.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--column">
+            <div class="form-field">
+              <label class="form-field__label" for="coffee-shop">Ton coffee shop</label>
+              <select class="form-field__input form-field__input--select" id="coffee-shop" name="coffee-shop">
+                <option>Bordeaux · 12 rue Sainte-Catherine</option>
+                <option>Cannes</option>
+                <option>La rochelle</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="jour">Jour de retrait</label>
+              <select class="form-field__input form-field__input--select" id="jour" name="jour">
+                <option>Aujourd’hui</option>
+                <option>Demain</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="heure">Heure de retrait</label>
+              <select class="form-field__input form-field__input--select" id="heure" name="heure">
+                <option>12 h 30</option>
+                <option>13 h 00</option>
+                <option>13 h 30</option>
+              </select>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">input field, version liste</span><span class="sample-card__note">Pour le retrait sur la page Paiement.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview sample-card__preview--start">
+            <fieldset class="payment-methods">
+              <legend class="title title--h3">Mode de paiement</legend>
+              <label class="payment">
+                <input class="payment__input visually-hidden" type="radio" name="paiement" value="retrait" checked>
+                <span class="payment__card">
+                  <span class="payment__radio"></span>
+                  <span class="payment__content">
+                    <span class="payment__title">Paiement au retrait</span>
+                    <span class="payment__text">Tu paies directement en coffee shop au moment du retrait.</span>
+                  </span>
+                </span>
+              </label>
+              <label class="payment">
+                <input class="payment__input visually-hidden" type="radio" name="paiement" value="virement">
+                <span class="payment__card">
+                  <span class="payment__radio"></span>
+                  <span class="payment__content">
+                    <span class="payment__title">Virement bancaire</span>
+                    <span class="payment__text">Ta commande est préparée dès réception du virement. Les coordonnées bancaires t’arrivent par e-mail.</span>
+                  </span>
+                </span>
+              </label>
+            </fieldset>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">payment choice et payment methods</span><span class="sample-card__note">Selected et Default. Clique sur l’autre carte pour changer.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="doc-section" id="produits" aria-labelledby="produits-titre">
+      <h2 class="title title--h2" id="produits-titre">Produits</h2>
+      <div class="sample-grid">
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <div class="image-placeholder" role="img" aria-label="Photo à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">img placeholder</span><span class="sample-card__note">Remplacé par la photo du produit.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <article class="product-card">
+              <div class="image-placeholder product-card__image" role="img" aria-label="Photo du bagel saumon à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+              <div class="product-card__content">
+                <h3 class="product-card__name">Bagel saumon</h3>
+                <p class="product-card__description">Saumon et cream cheese. Ajoute du citron, de l’aneth ou de l’avocat.</p>
+                <p class="product-card__price">9,50 €</p>
+              </div>
+              <button class="btn btn--pink btn--animated" type="button">ajouter au panier</button>
+            </article>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">product card</span><span class="sample-card__note">Le bouton s’anime au survol.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <div class="state-preview">
+              <span class="state-preview__label">Default</span>
+              <a class="product-thumb" href="#produits">
+                <span class="image-placeholder"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></span>
+                <span class="product-thumb__info"><span class="product-thumb__name">Bagel saumon</span><span class="product-thumb__price">9,50 €</span></span>
+              </a>
+            </div>
+            <div class="state-preview" inert>
+              <span class="state-preview__label">Hover</span>
+              <a class="product-thumb product-thumb--hover" href="#produits">
+                <span class="image-placeholder"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></span>
+                <span class="product-thumb__info"><span class="product-thumb__name">Bagel saumon</span><span class="product-thumb__price">9,50 €</span></span>
+              </a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">img placeholder, Default et Hover</span><span class="sample-card__note">Au survol, le nom et le prix apparaissent sous l’image.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <div class="carousel">
+              <h3 class="title title--h2">Salé</h3>
+              <ul class="carousel__list">
+                <li class="carousel__item">
+                  <a class="product-thumb product-thumb--animated" href="#produits">
+                    <span class="image-placeholder"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></span>
+                    <span class="product-thumb__info"><span class="product-thumb__name">Bagel saumon</span><span class="product-thumb__price">9,50 €</span></span>
+                  </a>
+                </li>
+                <li class="carousel__item">
+                  <a class="product-thumb product-thumb--animated" href="#produits">
+                    <span class="image-placeholder"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></span>
+                    <span class="product-thumb__info"><span class="product-thumb__name">Bill Clintdog</span><span class="product-thumb__price">8,00 €</span></span>
+                  </a>
+                </li>
+                <li class="carousel__item">
+                  <a class="product-thumb product-thumb--animated" href="#produits">
+                    <span class="image-placeholder"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></span>
+                    <span class="product-thumb__info"><span class="product-thumb__name">Salade à composer</span><span class="product-thumb__price">dès 9,00 €</span></span>
+                  </a>
+                </li>
+              </ul>
+              <a class="btn btn--animated" href="#produits">voir plus</a>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">imgs + title</span><span class="sample-card__note">Le carrousel : images et bouton s’animent au survol. Sur mobile, la rangée défile à l’horizontale.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <div class="product-list">
+              <h3 class="title title--h2">La carte</h3>
+              <div class="product-list__grid">
+                <article class="product-card">
+                  <div class="image-placeholder product-card__image" role="img" aria-label="Photo du bagel saumon à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+                  <div class="product-card__content">
+                    <h4 class="product-card__name">Bagel saumon</h4>
+                    <p class="product-card__description">Saumon et cream cheese. Ajoute du citron, de l’aneth ou de l’avocat.</p>
+                    <p class="product-card__price">9,50 €</p>
+                  </div>
+                  <button class="btn btn--pink btn--animated" type="button">ajouter au panier</button>
+                </article>
+                <article class="product-card">
+                  <div class="image-placeholder product-card__image" role="img" aria-label="Photo du Bill Clintdog à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+                  <div class="product-card__content">
+                    <h4 class="product-card__name">Bill Clintdog</h4>
+                    <p class="product-card__description">Oignons frits et cheddar. Au choix porc, poulet, canard ou panais veggie.</p>
+                    <p class="product-card__price">8,00 €</p>
+                  </div>
+                  <button class="btn btn--pink btn--animated" type="button">ajouter au panier</button>
+                </article>
+                <article class="product-card">
+                  <div class="image-placeholder product-card__image" role="img" aria-label="Photo de la salade à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+                  <div class="product-card__content">
+                    <h4 class="product-card__name">Salade à composer</h4>
+                    <p class="product-card__description">Choisis ta base, tes ingrédients et ta sauce.</p>
+                    <p class="product-card__price">dès 9,00 €</p>
+                  </div>
+                  <button class="btn btn--pink btn--animated" type="button">ajouter au panier</button>
+                </article>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">products + title</span><span class="sample-card__note">Les boutons des cards s’animent au survol.</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <article class="product-detail">
+              <a class="back-link product-detail__back" href="#top"><img class="back-link__icon" src="assets/icons/chevron-left.svg" alt="" width="14" height="25">Retour</a>
+              <div class="image-placeholder image-placeholder--product product-detail__image" role="img" aria-label="Photo du bagel saumon à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+              <div class="product-detail__body">
+                <div class="product-detail__texts">
+                  <h3 class="title">Bagel saumon</h3>
+                  <p class="text text--long product-detail__description">Petit pain brioché rond et troué en son milieu, avec du saumon et du cream cheese.</p>
+                  <p class="product-detail__price">9,50 €</p>
+                </div>
+                <fieldset class="option-group">
+                  <legend class="option-group__legend">Options</legend>
+                  <div class="option-group__list">
+                    <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-produit" value="citron"><span class="option__label">Citron</span></label>
+                    <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-produit" value="aneth"><span class="option__label">Aneth</span></label>
+                    <label class="option"><input class="option__input visually-hidden" type="checkbox" name="options-produit" value="avocat" checked><span class="option__label">Avocat</span></label>
+                  </div>
+                </fieldset>
+                <div class="product-detail__actions">
+                  <details class="dropdown dropdown--quantity">
+                    <summary class="dropdown__toggle"><span><span class="visually-hidden">Quantité : </span>1</span> <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                    <ul class="dropdown__list">
+                      <li><button class="dropdown-item" type="button">1</button></li>
+                      <li><button class="dropdown-item" type="button">2</button></li>
+                      <li><button class="dropdown-item" type="button">3</button></li>
+                    </ul>
+                  </details>
+                  <button class="btn" type="button">ajouter au panier</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">product single</span><span class="sample-card__note">Image à gauche et infos à droite à partir de 1024 px.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="doc-section" id="panier" aria-labelledby="panier-titre">
+      <h2 class="title title--h2" id="panier-titre">Panier</h2>
+      <div class="sample-grid">
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <article class="cart-item">
+              <div class="image-placeholder image-placeholder--cart cart-item__image" role="img" aria-label="Photo du bagel saumon à venir"><img class="image-placeholder__icon" src="assets/icons/image.svg" alt="" width="84" height="84"></div>
+              <div class="cart-item__info">
+                <h3 class="text text--buttons">Bagel saumon</h3>
+                <p class="text">Petit pain brioché rond et troué en son milieu, avec du saumon et du cream cheese.</p>
+                <p class="cart-item__price">9,50 €</p>
+              </div>
+              <div class="cart-item__actions">
+                <details class="dropdown dropdown--quantity">
+                  <summary class="dropdown__toggle"><span><span class="visually-hidden">Quantité : </span>1</span> <img class="dropdown__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                  <ul class="dropdown__list">
+                    <li><button class="dropdown-item" type="button">1</button></li>
+                    <li><button class="dropdown-item" type="button">2</button></li>
+                    <li><button class="dropdown-item" type="button">3</button></li>
+                  </ul>
+                </details>
+                <button class="btn" type="button">retirer du panier</button>
+              </div>
+            </article>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">ligne panier</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--column">
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">Default</span>
+              <details class="promo-code">
+                <summary class="promo-code__toggle">Ajouter des codes promo <img class="promo-code__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <div class="promo-code__content">
+                  <div class="form-field promo-code__field">
+                    <label class="form-field__label" for="code-promo">Code promo</label>
+                    <input class="form-field__input" id="code-promo" name="code-promo" type="text">
+                  </div>
+                  <button class="btn" type="button">Appliquer</button>
+                </div>
+              </details>
+            </div>
+            <div class="state-preview state-preview--start">
+              <span class="state-preview__label">On click</span>
+              <details class="promo-code" open>
+                <summary class="promo-code__toggle">Ajouter des codes promo <img class="promo-code__icon" src="assets/icons/chevron-down.svg" alt="" width="25" height="14"></summary>
+                <div class="promo-code__content">
+                  <div class="form-field promo-code__field">
+                    <label class="form-field__label" for="code-promo-ouvert">Code promo</label>
+                    <input class="form-field__input" id="code-promo-ouvert" name="code-promo-ouvert" type="text" value="COOLKIDS">
+                  </div>
+                  <button class="btn" type="button">Appliquer</button>
+                </div>
+              </details>
+            </div>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">promo ?</span><span class="sample-card__note">Clique pour afficher ou cacher le champ.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--column">
+            <p class="total"><span>Sous-total</span><span class="total__value">19,00 €</span></p>
+            <p class="total"><span>Préparation</span><span class="total__value">1,50 €</span></p>
+            <p class="total total--final"><span>Total</span><span class="total__value">20,50 €</span></p>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">total cart</span><span class="sample-card__note">Le total final passe en rose.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <ul class="order-summary">
+              <li class="summary-line">
+                <div class="summary-line__info">
+                  <p class="summary-line__name">Bagel saumon</p>
+                  <p class="summary-line__detail">Avec citron et avocat · Quantité : 1</p>
+                </div>
+                <p class="summary-line__price">9,50 €</p>
+              </li>
+              <li class="summary-line">
+                <div class="summary-line__info">
+                  <p class="summary-line__name">Cookie</p>
+                  <p class="summary-line__detail">Chocolat, normal · Quantité : 1</p>
+                </div>
+                <p class="summary-line__price">4,00 €</p>
+              </li>
+              <li class="summary-line">
+                <div class="summary-line__info">
+                  <p class="summary-line__name">Matcha latte</p>
+                  <p class="summary-line__detail">Taille M, lait d’avoine · Quantité : 1</p>
+                </div>
+                <p class="summary-line__price">5,50 €</p>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">recap line</span><span class="sample-card__note">Récapitulatif de la page Paiement.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="doc-section" id="commande" aria-labelledby="commande-titre">
+      <h2 class="title title--h2" id="commande-titre">Commande</h2>
+      <div class="sample-grid">
+        <figure class="sample-card">
+          <div class="sample-card__preview">
+            <p class="badge">En préparation</p>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">badge</span></figcaption>
+        </figure>
+        <figure class="sample-card sample-card--wide">
+          <div class="sample-card__preview">
+            <ol class="order-tracking">
+              <li class="tracking-step tracking-step--done">
+                <span class="tracking-step__dot"><span class="visually-hidden">Terminé :</span></span>
+                <span class="tracking-step__label">Commande reçue</span>
+              </li>
+              <li class="tracking-step tracking-step--current" aria-current="step">
+                <span class="tracking-step__dot" aria-hidden="true">2</span>
+                <span class="tracking-step__label">En préparation</span>
+              </li>
+              <li class="tracking-step">
+                <span class="tracking-step__dot" aria-hidden="true">3</span>
+                <span class="tracking-step__label">Prête à retirer</span>
+              </li>
+            </ol>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">tracking step</span><span class="sample-card__note">Done, Current et à venir.</span></figcaption>
+        </figure>
+        <figure class="sample-card">
+          <div class="sample-card__preview sample-card__preview--start">
+            <dl class="info-list">
+              <div class="info-item">
+                <dt class="info-item__label">Coffee shop</dt>
+                <dd class="info-item__value">Bordeaux, 12 rue Sainte-Catherine</dd>
+              </div>
+              <div class="info-item">
+                <dt class="info-item__label">Retrait</dt>
+                <dd class="info-item__value">Aujourd’hui à 12 h 30</dd>
+              </div>
+              <div class="info-item">
+                <dt class="info-item__label">Paiement</dt>
+                <dd class="info-item__value">Au retrait, 20,50 €</dd>
+              </div>
+            </dl>
+          </div>
+          <figcaption class="sample-card__caption"><span class="sample-card__name">info item</span><span class="sample-card__note">Infos de retrait sur la page Validation.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark-background" id="footer">
+    <nav class="footer__nav" aria-label="Pied de page">
+      <ul class="footer__list">
+        <li><a class="footer-link" href="#top">Accueil</a></li>
+        <li><a class="footer-link" href="#produits">La carte</a></li>
+        <li><a class="footer-link" href="#footer">Nos adresses</a></li>
+        <li><a class="footer-link" href="#footer">Devenir franchisé</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li><a class="footer-link" href="#footer">Je veux bosser</a></li>
+        <li><a class="footer-link" href="#footer">Contact</a></li>
+        <li><a class="footer-link" href="#footer">Mentions légales</a></li>
+      </ul>
+    </nav>
+    <img class="footer__logo" src="assets/images/logo.png" alt="Emilie and the Cool Kids" width="666" height="202">
+    <div class="footer__socials">
+      <a class="social-link" href="https://www.facebook.com/"><img class="social-link__icon" src="assets/icons/facebook.svg" alt="Facebook" width="48" height="48"></a>
+      <a class="social-link" href="https://www.instagram.com/"><img class="social-link__icon" src="assets/icons/instagram.svg" alt="Instagram" width="42" height="42"></a>
+    </div>
+    <a class="btn btn--white" href="#top">Accès franchisé</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Eighty Miles";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/eighty-miles.ttf") format("truetype");
+}
+
+.page {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--size-medium);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-body);
+  color: var(--bg);
+  background-color: var(--fg);
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: var(--size-3xlarge);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-auto);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-title);
+  color: var(--bg);
+}
+
+.title--h2 {
+  font-size: var(--size-2xlarge);
+}
+
+.title--h3 {
+  font-size: var(--size-xlarge);
+}
+
+.title--light {
+  color: var(--fg);
+}
+
+.subtitle {
+  font-family: var(--font-buttons);
+  font-size: var(--size-xlarge);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-auto);
+}
+
+.text {
+  font-family: var(--font-body);
+  font-size: var(--size-medium);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-body);
+}
+
+.text--long {
+  line-height: var(--line-text);
+}
+
+.text--buttons {
+  font-family: var(--font-buttons);
+  font-size: var(--size-large);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-auto);
+  text-transform: uppercase;
+}
+
+.text--nav {
+  font-family: var(--font-buttons);
+  font-size: var(--size-nav);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-auto);
+  text-transform: uppercase;
+}
+
+.text--footer {
+  font-family: var(--font-body);
+  font-size: var(--size-small);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-auto);
+  text-transform: uppercase;
+}
+
+.text--diapo {
+  font-family: var(--font-buttons);
+  font-size: var(--size-diapo);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-auto);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  z-index: 10;
+  padding: var(--space-s) var(--space-l);
+  font-family: var(--font-buttons);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  color: var(--bg);
+  background-color: var(--fg-sec);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

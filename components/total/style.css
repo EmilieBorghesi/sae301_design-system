@@ -1,0 +1,24 @@
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-xl) var(--space-l);
+  gap: var(--space-l);
+  max-width: var(--promo-width);
+  font-family: var(--font-buttons);
+  font-size: var(--size-large);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-auto);
+  text-transform: uppercase;
+  background-color: var(--pink-100);
+  border-bottom: var(--stroke-thin) solid var(--bg-sec);
+}
+
+.total__value {
+  white-space: nowrap;
+}
+
+.total--final {
+  background-color: var(--pink-300);
+}

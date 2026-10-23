@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-l) var(--gutter);
+  gap: var(--space-l) var(--space-2xl);
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+.header__logo {
+  width: var(--logo-header);
+}
+
+.header__actions {
+  display: flex;
+  gap: var(--space-s);
+}

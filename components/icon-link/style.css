@@ -1,0 +1,17 @@
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--target);
+  min-height: var(--target);
+  color: var(--fg);
+}
+
+.icon-link--hover {
+  color: var(--fg-sec);
+}
+
+.icon-link__icon {
+  width: var(--icon-xl);
+  height: var(--icon-xl);
+}
